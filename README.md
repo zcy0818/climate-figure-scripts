@@ -1,6 +1,6 @@
-# Figure-generation scripts for the accompanying manuscript
+# Figure-generation scripts for Arctic sea-ice loss and early-1940s winter cold
 
-This archive contains the author's 24 Python scripts for generating main-text and supplementary figures. It was assembled from the supplied `code.zip` on 2026-11-02. The archive contains **code only**: input NetCDF files, the historical boundary shapefile, and generated figure files are not included. The code and accompanying documentation are released under the MIT License; see `LICENSE`.
+This archive accompanies the manuscript **“Arctic sea-ice loss may have contributed to extreme winter cold in Eastern Europe and western Russia in the early 1940s”** by C. Zhu, F. Li, S. Wang, V. A. Semenov, N. S. Keenlyside, T. A. Aldonina, and B. Zhou, in that order as listed in the manuscript draft. It contains 24 Python scripts for generating main-text and supplementary figures and was assembled from the supplied `code.zip` on 2026-11-02. The archive contains **code only**: input NetCDF files, the historical boundary shapefile, and generated figure files are not included. The code and accompanying documentation are released under the MIT License; see `LICENSE`.
 
 ## What is in the archive
 
@@ -19,7 +19,9 @@ All scripts are in `code/`. Keep them together because several scripts import or
 | Supplementary Fig. S4 | `FigS4.py` | Uses observational surface-air-temperature datasets and station data. |
 | Supplementary Fig. S5 | `FigS5.py` | Uses reconstructed and HadISST sea-ice data. |
 | Supplementary Fig. S6 | `FigS6.py`, `Fig4e.py`, `Fig4common.py` | Produces a two-panel variant of Fig. 4e. |
-| Additional member-specific panels | `FigS789_member2_a_d_black_frames.py`, Fig. 4 scripts | Its filename suggests S7–S9, but its actual outputs are three member-specific Fig. 4 composites. **Confirm the manuscript figure numbering before citing this row.** |
+| Supplementary Fig. S7 | `FigS789_member2_a_d_black_frames.py`, Fig. 4 scripts | Member 2: vertical sections in panels A–C and a 500-hPa height/wave-activity-flux map in panel D. |
+| Supplementary Fig. S8 | `FigS789_member2_a_d_black_frames.py`, Fig. 4 scripts | Mean response of members 10 and 18, with panels A–C. |
+| Supplementary Fig. S9 | `FigS789_member2_a_d_black_frames.py`, Fig. 4 scripts | Member 13, with panels A–E. |
 
 The archive should be described as **figure-generation code** unless all other analysis code used by the manuscript is also deposited.
 
@@ -39,7 +41,7 @@ The scripts have **not** been rerun end-to-end from this archive because their i
 
 ## Input data and local paths
 
-Before running a script, obtain its input data and edit the path constants near the top of that script. The original scripts use absolute paths on local `E:` and `F:` drives. `LOCAL_PATHS.tsv` inventories every source line containing such a path. `DATA_SOURCES_TEMPLATE.csv` provides blank fields for the authors to fill with each dataset's actual repository, identifier, version or access date, and reuse conditions. **The filenames in the code do not verify data provenance or permission to redistribute a dataset.**
+Before running a script, obtain its input data and edit the path constants near the top of that script. The original scripts use absolute paths on local `E:` and `F:` drives. `LOCAL_PATHS.tsv` inventories every source line containing such a path. [`DATA_SOURCES.md`](DATA_SOURCES.md) records the dataset sources and versions explicitly stated in the manuscript draft, and distinguishes inputs whose access locations are still unspecified. `DATA_SOURCES_TEMPLATE.csv` remains a file-level worksheet for authors to connect each local input with a verified repository, identifier, version or access date, and reuse condition. **A filename does not verify data provenance or permission to redistribute a dataset.**
 
 Major inputs referenced by the scripts include:
 
@@ -75,9 +77,8 @@ The only source-code change in this archive is the `OUTPUT_STEM` path in `code/F
 
 The code archive is public. The following improvements would make it easier for readers to reproduce the figures:
 
-1. Fill in `DATA_SOURCES_TEMPLATE.csv` using verified dataset URLs/DOIs, versions, access conditions, and citations; describe any inputs that cannot be redistributed.
-2. Confirm that the script-to-figure mapping matches the submitted manuscript, especially the member-specific supplemental figures.
+1. Fill in `DATA_SOURCES_TEMPLATE.csv` at the file level, including unresolved IAPICE and CAM-output access routes; describe any inputs that cannot be redistributed.
+2. Confirm that the script-to-figure mapping still matches the final submitted manuscript.
 3. Test the scripts using the intended data and record any deviations from the observed package versions.
 4. Replace any remaining machine-specific paths with a documented configuration if a directly runnable public package is required.
-
 

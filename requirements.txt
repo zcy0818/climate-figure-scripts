@@ -1,0 +1,16 @@
+# Versions observed in the inspected Anaconda base environment on 2026-11-02.
+# These are not independently verified as the versions used for every original figure.
+# Python 3.12 is supported by compiled script caches; the current base Python is 3.12.3.
+numpy==1.26.4
+pandas==2.2.3
+xarray==2026.4.0
+matplotlib==3.8.4
+Cartopy==0.25.0
+Shapely==2.1.2
+SciPy==1.17.1
+cftime==1.6.5
+geopandas==1.1.3
+netCDF4==1.7.4
+h5netcdf==1.8.1
+pyproj==3.7.2
+pyogrio==0.12.1

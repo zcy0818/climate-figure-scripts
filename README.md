@@ -41,7 +41,7 @@ The scripts have **not** been rerun end-to-end from this archive because their i
 
 ## Input data and local paths
 
-Before running a script, obtain its input data and edit the path constants near the top of that script. The original scripts use absolute paths on local `E:` and `F:` drives. `LOCAL_PATHS.tsv` inventories every source line containing such a path. [`DATA_SOURCES.md`](DATA_SOURCES.md) records the dataset sources and versions explicitly stated in the manuscript draft, and distinguishes inputs whose access locations are still unspecified. `DATA_SOURCES_TEMPLATE.csv` remains a file-level worksheet for authors to connect each local input with a verified repository, identifier, version or access date, and reuse condition. **A filename does not verify data provenance or permission to redistribute a dataset.**
+Before running a script, obtain its input data and edit the path constants near the top of that script. The original scripts use absolute paths on local `E:` and `F:` drives. `LOCAL_PATHS.tsv` inventories every source line containing such a path. [`DATA_SOURCES.md`](DATA_SOURCES.md) records dataset sources and versions from the manuscript draft and the related [Li et al. (2026) article](https://doi.org/10.1029/2025GL121178), and distinguishes inputs whose exact access locations are still unspecified. `DATA_SOURCES_TEMPLATE.csv` remains a file-level worksheet for authors to connect each local input with a verified repository, identifier, version or access date, and reuse condition. **A filename does not verify data provenance or permission to redistribute a dataset.**
 
 Major inputs referenced by the scripts include:
 
@@ -81,4 +81,5 @@ The code archive is public. The following improvements would make it easier for 
 2. Confirm that the script-to-figure mapping still matches the final submitted manuscript.
 3. Test the scripts using the intended data and record any deviations from the observed package versions.
 4. Replace any remaining machine-specific paths with a documented configuration if a directly runnable public package is required.
+
 

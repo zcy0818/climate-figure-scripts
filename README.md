@@ -27,7 +27,7 @@ The archive should be described as **figure-generation code** unless all other a
 
 ## Software environment
 
-The inspected Anaconda base installation is CPython 3.12.3 with Matplotlib 3.8.4. Existing figure-file metadata identifies Matplotlib 3.8.4, and compiled script caches identify the Python 3.12 series; neither establishes the precise Python patch version used for every original figure. `requirements.txt` records the currently inspected versions of directly used packages and common NetCDF/GIS backends. It is an **observed environment snapshot**, not a tested lockfile for the original runs.
+The inspected Anaconda base installation is CPython 3.12.3 with Matplotlib 3.8.4. Existing figure-file metadata identifies Matplotlib 3.8.4, and compiled script caches identify the Python 3.12 series; neither establishes the precise Python patch version used for every original figure. The related Li et al. (2026) article reports Python 3.8.3 for *its* graphics; that statement does not establish the execution version of this manuscript's scripts. `requirements.txt` records the currently inspected versions of directly used packages and common NetCDF/GIS backends. It is an **observed environment snapshot**, not a tested lockfile for the original runs.
 
 One possible installation workflow is:
 

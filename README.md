@@ -71,10 +71,13 @@ Run each supplementary script separately as needed. `FigS6.py` and `FigS789_memb
 
 The only source-code change in this archive is the `OUTPUT_STEM` path in `code/Fig5.py`: the personal desktop output path was replaced with an `outputs/Fig5_6panels` path beside that script. All numerical and plotting logic is otherwise preserved.
 
-## Before public release
+## Remaining steps for full reproducibility
+
+The code archive is public. The following improvements would make it easier for readers to reproduce the figures:
 
 1. Fill in `DATA_SOURCES_TEMPLATE.csv` using verified dataset URLs/DOIs, versions, access conditions, and citations; describe any inputs that cannot be redistributed.
 2. Confirm that the script-to-figure mapping matches the submitted manuscript, especially the member-specific supplemental figures.
 3. Test the scripts using the intended data and record any deviations from the observed package versions.
 4. Replace any remaining machine-specific paths with a documented configuration if a directly runnable public package is required.
+
 

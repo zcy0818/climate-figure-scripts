@@ -31,5 +31,7 @@ The related article by [Li et al. (2026), *Geophysical Research Letters*, doi:10
 | Historical European-boundary shapefile | Used for Fig. S1; the script refers to a 1942-01-31 boundary | The main manuscript and its availability statement do not specify the shapefile's source, download link, or redistribution rights. |
 | External forcing | CMIP5 historical protocol for 1901–2005 and RCP8.5 for 2006–2017 | The manuscript supplies the protocol names but no specific forcing-file archive or identifiers. |
 
+[Semenov et al. (2024)](https://doi.org/10.1007/s00376-024-3320-x) gives [IAPICE1 data locations](https://doi.org/10.11582/2024.00112) for its earlier reconstruction. Li et al. (2026, Section 2.2) explicitly describes three methodological differences in IAPICE v1.1. Verify the version of any file obtained through the earlier IAPICE1 records before citing it as the v1.1 input used by these scripts.
+
 Input data are **not included** in this code archive, and the MIT License applies only to the code and accompanying documentation, not to third-party datasets. For any dataset that cannot be redistributed, the final manuscript and this repository should state the controlling source and an access route rather than imply that the data are bundled here.
 
